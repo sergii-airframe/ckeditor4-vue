@@ -50,6 +50,8 @@ export default {
 				return;
 			}
 
+			this.$emit( 'beforeReady' );
+
 			const config = this.config || {};
 
 			if ( this.readOnly !== null ) {
